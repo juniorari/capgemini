@@ -38,11 +38,16 @@ Copiar arquivo .env
 ```
 $ cp .env.example .env
 ```
-OBS: O banco está em SQLite no local: `database\database.sqlite`, e caso ainda não tenha
+OBS: O banco em SQLite deve estar no local: `database\database.sqlite`, e caso ainda não tenha
 a extensão de conexão com o SQLite, instale com o seguinte comando, trocando o `X` pela 
 sua versão do PHP:
 ```
 $ sudo apt install php7.X-sqlite3
+```
+Criar o banco de dados vazio
+
+```
+$ touch database\database.sqlite
 ```
 
 Gerar a chave da aplicação
